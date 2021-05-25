@@ -20,7 +20,7 @@ public class GreetingService {
         
         Greeting saved = repo.save(g1);
         
-        if (saved != null ) {
+        if (saved != null) {
             return true;
         }
 
