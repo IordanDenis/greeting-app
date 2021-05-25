@@ -17,9 +17,10 @@ public class GreetingService {
 
     public boolean addNewGreeting( Greeting g1) {
 
+        
         Greeting saved = repo.save(g1);
-
-        if (saved.getGreetingID() > 0 && (saved.getDescription() != null) && saved.getPrice() > 0 && saved.getTypeID() > 0 && saved.getCategoryID() > 0 ){
+        
+        if (saved != null ) {
             return true;
         }
 
